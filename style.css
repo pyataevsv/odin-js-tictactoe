@@ -1,0 +1,74 @@
+h1{
+    margin: 80px;
+}
+
+.grid-item{
+    height: 100px;
+    width: 100px;
+    background-color: aqua;
+    border: 1px solid grey;
+    position: relative;
+}
+.grid-item:hover{
+    
+    background-color: rgb(248, 247, 156);
+    
+}
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-content: center;
+}
+
+.dot {
+    height: 80px;
+    width: 80px;
+    border: 2px solid red;
+    opacity: 1;
+    border-radius: 50%;
+    display: inline-block;
+    position: relative;
+    top: 10px;
+    left: 10px;
+}
+
+.left-line {
+    height: 100px;
+    width: 100px;
+    border-left: 2px solid red;
+    position: absolute;
+    top: 35px;
+    left: 35px;
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg); 
+}
+.right-line {
+    height: 100px;
+    width: 100px;
+    border-bottom: 2px solid red;
+    position: absolute;
+    top: -35px;
+    left: 35px;
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg); 
+}
+
+input{
+    text-align: center;
+    padding: 10px;
+    font-size: 150%;
+    margin: 20px;
+    width: 286px;
+    cursor: pointer;
+    background-color: coral;
+    border: none;
+    display: none;
+}
+
+input:hover {
+    opacity: 0.8;
+}
+
+.center{
+    text-align: center;
+}
